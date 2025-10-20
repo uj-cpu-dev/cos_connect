@@ -1,0 +1,188 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #ffffff 0%, #e0ebff 100%);
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+/* Hero Card */
+.card {
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+  padding: 70px 45px;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(37, 99, 235, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.12);
+}
+
+/* Fade-In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo */
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #2563EB;
+  margin-bottom: 10px;
+}
+
+.logo span {
+  color: #1d4ed8;
+}
+
+/* Headline */
+.headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* Subtext */
+.subtext {
+  font-size: 1.05rem;
+  color: #334155;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+/* Highlight */
+.highlight {
+  font-size: 1rem;
+  color: #1e293b;
+  background: linear-gradient(90deg, #f0f7ff 0%, #ffffff 100%);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 35px;
+  line-height: 1.6;
+  border: 1px solid #e2e8f0;
+}
+
+.highlight strong {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+/* Form */
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+  margin: 0 auto 20px;
+}
+
+.waitlist-form input,
+.waitlist-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.waitlist-form input:focus,
+.waitlist-form select:focus {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+.survey-label {
+  text-align: left;
+  font-size: 0.92rem;
+  color: #334155;
+  margin-top: 10px;
+}
+
+/* Button */
+.waitlist-form button {
+  background: linear-gradient(90deg, #2563EB 0%, #1d4ed8 100%);
+  color: #ffffff;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.waitlist-form button:hover {
+  background: linear-gradient(90deg, #1d4ed8 0%, #2563EB 100%);
+  transform: translateY(-1px);
+}
+
+/* Pulse Animation */
+.pulse {
+  animation: pulse 2.2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.05);
+  }
+}
+
+/* Privacy + Footer */
+.privacy {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 50px 25px;
+  }
+
+  .headline {
+    font-size: 1.6rem;
+  }
+
+  .subtext {
+    font-size: 0.95rem;
+  }
+}

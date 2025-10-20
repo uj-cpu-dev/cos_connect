@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisaConnect – Find Real Jobs That Sponsor Visas</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="hero">
+    <div class="card fade-in">
+        <h1 class="logo">🌍 <span>VisaConnect</span></h1>
+
+        <h2 class="headline">
+            Find Real Jobs That Sponsor Visas — Shared by People Who Already Work There
+        </h2>
+
+        <p class="subtext">
+            Skip the endless job boards. Get access to verified openings that actually offer visa sponsorship — posted directly by employees at sponsoring companies.
+        </p>
+
+        <p class="highlight">
+            💡 Employees can also <strong>share openings</strong> and <strong>earn a small bonus</strong> when their referral helps someone get hired.
+        </p>
+
+        <form class="waitlist-form" name="visaconnect-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+
+            <label for="user-type" class="survey-label">
+                👋 Who are you joining as?
+            </label>
+            <select name="user-type" id="user-type" required>
+                <option value="">Select an option</option>
+                <option value="employee">I already work at a company that offers visa sponsorship</option>
+                <option value="job-seeker">I’m looking for visa sponsorship opportunities</option>
+            </select>
+
+            <button type="submit" class="pulse">Get Early Access</button>
+            <p style="display:none">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+        </form>
+
+        <p class="privacy">🔒 We respect your privacy. No spam, ever.</p>
+        <footer>© 2025 <strong>VisaConnect</strong> — All Rights Reserved</footer>
+    </div>
+</main>
+</body>
+</html>
