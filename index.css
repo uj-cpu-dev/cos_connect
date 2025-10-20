@@ -186,3 +186,21 @@ footer {
     font-size: 0.95rem;
   }
 }
+
+.return-button {
+  display: inline-block;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #2563EB 0%, #1d4ed8 100%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.return-button:hover {
+  background: linear-gradient(90deg, #1d4ed8 0%, #2563EB 100%);
+  transform: translateY(-2px);
+}
